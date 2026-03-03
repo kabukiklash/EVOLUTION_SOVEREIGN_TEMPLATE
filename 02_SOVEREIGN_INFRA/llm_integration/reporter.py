@@ -7,7 +7,7 @@ def print_token_economy_report(tokens_used: int, tokens_saved: int, execution_ti
         efficiency = (tokens_saved / (tokens_used + tokens_saved)) * 100
 
     print("\n" + "="*50)
-    print(" 📈 ANTIGRAVITY TOKEN ECONOMY REPORT")
+    print(" 📈 EVOLUTION TOKEN ECONOMY REPORT")
     print("="*50)
     print(f" 🔹 Tokens Used   : {tokens_used:,}")
     print(f" 🟩 Tokens Saved  : {tokens_saved:,} (by CMS Curation)")

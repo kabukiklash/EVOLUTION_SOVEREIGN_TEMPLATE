@@ -6,7 +6,7 @@ from datetime import datetime
 
 class SovereignAuditorHardened:
     """
-    Antigravity Sovereign Audit Report (SAR) V2.
+    Evolution Sovereign Audit Report (SAR) V2.
     Compliance: ISO 27002, ISO 19011, NIST SP 800-160.
     """
     
@@ -20,7 +20,7 @@ class SovereignAuditorHardened:
         }
 
     def _canonical_hash(self, filepath):
-        """Calculates hash using Antigravity Canonical Form (ACF): LF endings for text."""
+        """Calculates hash using Evolution Canonical Form (ACF): LF endings for text."""
         hasher = hashlib.sha256()
         
         # Check if binary (simple NUL byte check)
@@ -76,7 +76,7 @@ class SovereignAuditorHardened:
         
         # Registry Check (Mock for SAR demonstration)
         registry_alert = "CLEAN" 
-        # In real scenario: subprocess.run(["reg", "query", "HKCU\\Software\\Antigravity"], capture_output=True)
+        # In real scenario: subprocess.run(["reg", "query", "HKCU\\Software\\Evolution"], capture_output=True)
         
         self.report["checks"].append({
             "id": "PURITY_02",

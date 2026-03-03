@@ -8,7 +8,7 @@ Write-Host "🏛️ [MIP] Iniciando Fundação Soberana..." -ForegroundColor Gre
 # 1. Criar Ponto de Restauração (ISO/NIST requirement)
 if (-not (Get-ComputerRestorePoint -LastStatus)) {
     Write-Host "[1/3] Criando Ponto de Restauração do Windows..."
-    # Checkpoint-Computer -Description "Antigravity-MIP-Gold" -RestorePointType MODIFY_SETTINGS
+    # Checkpoint-Computer -Description "Evolution-MIP-Gold" -RestorePointType MODIFY_SETTINGS
 }
 
 # 2. Validar Zonas [00-04]

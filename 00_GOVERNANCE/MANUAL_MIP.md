@@ -1,11 +1,11 @@
 # Manual do Protocolo Militar de Instalação (MIP) 🏛️🛡️
 
-Este guia descreve como utilizar o **Gabarito de Ouro** (`ANTIGRAVITY_SOVEREIGN_TEMPLATE`) para implantar uma nova instância do Antigravity em qualquer ambiente Windows, garantindo conformidade com as normas ISO e integridade soberana.
+Este guia descreve como utilizar o **Gabarito de Ouro** (`EVOLUTION_SOVEREIGN_TEMPLATE`) para implantar uma nova instância do Evolution em qualquer ambiente Windows, garantindo conformidade com as normas ISO e integridade soberana.
 
 ## 🚀 1. Preparação (Clone Nomádico)
 Para iniciar uma nova célula, você não deve "forkar" o repositório, mas sim clonar a estrutura física para manter a pureza original.
 
-1.  Copie a pasta `ANTIGRAVITY_SOVEREIGN_TEMPLATE` para o destino final.
+1.  Copie a pasta `EVOLUTION_SOVEREIGN_TEMPLATE` para o destino final.
 2.  Mantenha a árvore `[00-04]` intacta.
 3.  Garanta que não existam arquivos `.env` ou `.log` prévios na cópia (verifique via `ls -R`).
 
@@ -38,7 +38,7 @@ Se o `Apply.ps1` falhar ou se o SAR acusar erros de integridade:
     .\Revert.ps1
     ```
 2.  O sistema removerá marcadores de operação e limpará o lixo temporário.
-3.  Se persistirem erros no sistema operacional, utilize o Ponto de Restauração `Antigravity-MIP-Gold` via Windows System Restore.
+3.  Se persistirem erros no sistema operacional, utilize o Ponto de Restauração `Evolution-MIP-Gold` via Windows System Restore.
 
 ## ⚖️ 5. Manutenção de Soberania
 - **Mudanças no Core:** Qualquer alteração na zona `01_KINETIC_CORE` exige a regeneração do manifesto e uma nova rodada de auditoria SAR.

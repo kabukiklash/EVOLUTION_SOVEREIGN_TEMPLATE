@@ -7,10 +7,10 @@ from typing import Any, Dict
 
 class StructuredLogger:
     """
-    Antigravity Structured Logging: JSON output for auditability.
+    Evolution Structured Logging: JSON output for auditability.
     Emulates structlog pattern for high-fidelity recording.
     """
-    def __init__(self, service_name: str = "ANTIGRAVITY"):
+    def __init__(self, service_name: str = "EVOLUTION"):
         self.service_name = service_name
         self.host_id = socket.gethostname()
 

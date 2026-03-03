@@ -12,7 +12,7 @@ if (Test-Path "00_GOVERNANCE/deployment.ok") {
 }
 
 # 2. Restaurar Sistema (Opcional - Requer interação ou script de confirmação)
-Write-Host "[!] Recomendado: Usar o Ponto de Restauração 'Antigravity-MIP-Gold' via GUI do Windows se houver falhas críticas." -ForegroundColor Cyan
+Write-Host "[!] Recomendado: Usar o Ponto de Restauração 'Evolution-MIP-Gold' via GUI do Windows se houver falhas críticas." -ForegroundColor Cyan
 
 # 3. Limpeza de Slag
 $slag = Get-ChildItem -Recurse -Include .log, .pyc, __pycache__ -ErrorAction SilentlyContinue

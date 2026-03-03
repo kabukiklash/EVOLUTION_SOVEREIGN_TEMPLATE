@@ -5,7 +5,7 @@ import json
 @dataclass
 class ToolIntent:
     """
-    Antigravity Tool Intent: A proposal to use a tool.
+    Evolution Tool Intent: A proposal to use a tool.
     Strictly follows 'Passive-Only' governance.
     """
     tool_name: str

@@ -5,10 +5,10 @@ from typing import List, Dict, Any, Optional
 
 class SemanticMemory:
     """
-    Antigravity Semantic Memory Layer.
+    Evolution Semantic Memory Layer.
     Uses SQLite for vector storage and manual Cosine Similarity for portability.
     """
-    def __init__(self, db_path: str = "C:/Users/RobsonSilva-AfixGraf/Habilidade_de_agente/antigravity.db"):
+    def __init__(self, db_path: str = "C:/Users/RobsonSilva-AfixGraf/Habilidade_de_agente/evolution.db"):
         self.db_path = db_path
         self._initialize_semantic_db()
 

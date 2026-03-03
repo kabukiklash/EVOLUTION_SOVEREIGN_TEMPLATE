@@ -22,7 +22,7 @@ async def test_connectivity():
             
         # Optional: Quick chat test (Instant Mode)
         print("\n💬 Testing Instant Mode...")
-        response = await client.chat_instant("Olá Kimi! Você está pronto para ser o cérebro do Antigravity?")
+        response = await client.chat_instant("Olá Kimi! Você está pronto para ser o cérebro do Evolution?")
         print(f"🤖 Kimi: {response}")
         
     except Exception as e:

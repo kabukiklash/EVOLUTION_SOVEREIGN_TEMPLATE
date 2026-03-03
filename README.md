@@ -1,6 +1,6 @@
-# ANTIGRAVITY SOVEREIGN TEMPLATE (GOLD STANDARD) 🏛️✨
+# EVOLUTION SOVEREIGN TEMPLATE (GOLD STANDARD) 🏛️✨
 
-Este é o **Gabarito de Ouro** para instâncias do Antigravity Nomadic. Este repositório é purificado, transacional e militarmente auditado.
+Este é o **Gabarito de Ouro** para instâncias do Evolution Nomadic. Este repositório é purificado, transacional e militarmente auditado.
 
 ## 📂 Estrutura S6 (Sovereign 6)
 - `[00_GOVERNANCE]`: Constituição, Relatórios SAR e Políticas de Acesso.
@@ -18,7 +18,7 @@ Este é o **Gabarito de Ouro** para instâncias do Antigravity Nomadic. Este rep
 ## 📋 Compliance
 - ISO 27001 / 27002
 - NIST SP 800-160
-- Antigravity Sovereign Protocol V3.1
+- Evolution Sovereign Protocol V3.1
 
 ---
 **AVISO: Clonar, nunca forkar. A integridade é medida pelo Merkle Root.**

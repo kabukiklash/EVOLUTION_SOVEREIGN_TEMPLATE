@@ -4,10 +4,10 @@ from ledger_manager import LedgerManager
 
 def run_audit():
     """
-    Antigravity Audit Command: Verifies full system integrity.
+    Evolution Audit Command: Verifies full system integrity.
     """
     print("="*50)
-    print("🛡️ ANTIGRAVITY SYSTEM AUDIT")
+    print("🛡️ EVOLUTION SYSTEM AUDIT")
     print("="*50)
     
     ledger = LedgerManager()

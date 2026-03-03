@@ -1,5 +1,5 @@
 """
-CMS Client: Integration Layer for Antigravity -> Cognitive Memory Service
+CMS Client: Integration Layer for Evolution -> Cognitive Memory Service
 Provides high-level functions for memory operations.
 """
 import httpx
@@ -43,7 +43,7 @@ class CMSClient:
     async def query_memory(
         self,
         query_text: str,
-        requester: str = "ANTIGRAVITY",
+        requester: str = "EVOLUTION",
         vector_topk: int = 10,
         graph_hops: int = 1,
         max_nodes: int = 50,

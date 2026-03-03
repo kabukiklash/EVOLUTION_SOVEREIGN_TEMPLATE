@@ -8,12 +8,12 @@ from typing import Dict, Any
 
 class FormalVerifier:
     """
-    Antigravity Formal Verification Motor.
+    Evolution Formal Verification Motor.
     Generates Mathematical Proofs of State.
     """
-    def __init__(self, db_path: str = "C:/Users/RobsonSilva-AfixGraf/Habilidade_de_agente/antigravity.db"):
+    def __init__(self, db_path: str = "C:/Users/RobsonSilva-AfixGraf/Habilidade_de_agente/evolution.db"):
         self.db_path = db_path
-        self.secret_key = os.environ.get("ANTIGRAVITY_LEDGER_KEY", "default_insecure_key_change_me")
+        self.secret_key = os.environ.get("EVOLUTION_LEDGER_KEY", "default_insecure_key_change_me")
 
     def generate_state_proof(self) -> Dict[str, Any]:
         """

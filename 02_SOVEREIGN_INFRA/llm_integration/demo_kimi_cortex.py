@@ -7,10 +7,10 @@ from datetime import datetime
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/..")
 
 from llm_integration.cognitive_cortex import cognitive_cortex
-from antigravity_memory_backend.memory_adapter import memory_adapter
+from evolution_memory_backend.memory_adapter import memory_adapter
 
 async def main():
-    print(f"\n🚀 Antigravity Cognitive Cortex Demo - {datetime.now().isoformat()}")
+    print(f"\n🚀 Evolution Cognitive Cortex Demo - {datetime.now().isoformat()}")
     print("="*60)
     
     # 1. Clean start (verify CMS is up)

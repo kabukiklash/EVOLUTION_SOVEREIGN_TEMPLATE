@@ -3,7 +3,7 @@ from intent_schema import ToolIntent
 
 class PolicyEngine:
     """
-    Antigravity Policy Engine: The Guardian of Non-Agency.
+    Evolution Policy Engine: The Guardian of Non-Agency.
     Enforces WORM-like safety on tool execution intents.
     """
     def __init__(self):

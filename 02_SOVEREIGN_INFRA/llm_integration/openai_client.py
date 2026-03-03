@@ -9,7 +9,7 @@ logger = logging.getLogger("OpenAIClient")
 
 class OpenAIClient:
     """
-    Antigravity OpenAI Client.
+    Evolution OpenAI Client.
     Supports chat completions and deep reasoning models (o1/o3-mini).
     """
     

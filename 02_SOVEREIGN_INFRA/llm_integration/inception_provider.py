@@ -38,7 +38,7 @@ class InceptionProvider(LLMProvider):
     def generate(self, request: LLMRequest) -> LLMResponse:
         """
         Synchronous generation wrapper (as per LLMProvider interface).
-        In Antigravity, we prefer async, but we maintain the base interface.
+        In Evolution, we prefer async, but we maintain the base interface.
         """
         import asyncio
         try:

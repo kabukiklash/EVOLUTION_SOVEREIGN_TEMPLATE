@@ -11,12 +11,12 @@ from typing import Optional, Dict, Any, List
 
 class LedgerManager:
     """
-    Antigravity Platform-Grade Ledger Manager.
+    Evolution Platform-Grade Ledger Manager.
     Features: Append-Only (Triggers), Canonical Payloads (Deterministic), HMAC Signatures.
     """
-    def __init__(self, db_path: str = "C:/Users/RobsonSilva-AfixGraf/Habilidade_de_agente/antigravity.db"):
+    def __init__(self, db_path: str = "C:/Users/RobsonSilva-AfixGraf/Habilidade_de_agente/evolution.db"):
         self.db_path = db_path
-        self.secret_key = os.environ.get("ANTIGRAVITY_LEDGER_KEY", "default_insecure_key_change_me")
+        self.secret_key = os.environ.get("EVOLUTION_LEDGER_KEY", "default_insecure_key_change_me")
         self.session_id = str(uuid.uuid4())
         self.host_id = socket.gethostname()
         self.process_id = os.getpid()
@@ -88,7 +88,7 @@ class LedgerManager:
         conn.commit()
 
     def _migrate_to_v2(self, conn):
-        print("[*] Migrating Antigravity Ledger to v2 (Platform-Grade)...", file=sys.stderr)
+        print("[*] Migrating Evolution Ledger to v2 (Platform-Grade)...", file=sys.stderr)
         conn.execute("ALTER TABLE audit_ledger RENAME TO audit_ledger_old")
         self._create_schema_latest(conn)
         
@@ -122,7 +122,7 @@ class LedgerManager:
         print("[+] Migration completed successfully.", file=sys.stderr)
 
     def _migrate_to_v3(self, conn):
-        print("[*] Migrating Antigravity Ledger to v3 (Token Economy)...", file=sys.stderr)
+        print("[*] Migrating Evolution Ledger to v3 (Token Economy)...", file=sys.stderr)
         try:
             conn.execute("ALTER TABLE audit_ledger ADD COLUMN tokens_used INTEGER DEFAULT 0")
             conn.execute("ALTER TABLE audit_ledger ADD COLUMN tokens_saved INTEGER DEFAULT 0")
@@ -134,7 +134,7 @@ class LedgerManager:
     def _canonicalize_json(self, data: Dict[str, Any]) -> str:
         return json.dumps(data, sort_keys=True, separators=(',', ':'))
 
-    def record_event(self, event_type: str, payload: Dict[str, Any], justification: str, correlation_id: Optional[str] = None, actor_id: str = "ANTIGRAVITY", tokens_used: int = 0, tokens_saved: int = 0):
+    def record_event(self, event_type: str, payload: Dict[str, Any], justification: str, correlation_id: Optional[str] = None, actor_id: str = "EVOLUTION", tokens_used: int = 0, tokens_saved: int = 0):
         event_id = str(uuid.uuid4())
         
         # 1. Canonicalization

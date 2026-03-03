@@ -5,7 +5,7 @@ from ledger_manager import LedgerManager
 
 class DataMigrator:
     """
-    Antigravity Data Migrator: JSON Legacy -> SQLite Ledger.
+    Evolution Data Migrator: JSON Legacy -> SQLite Ledger.
     Ensures technical memory is preserved during system upgrades.
     """
     def __init__(self, ledger: LedgerManager):

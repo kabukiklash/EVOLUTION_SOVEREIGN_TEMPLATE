@@ -7,15 +7,15 @@ from typing import Optional, Dict, Any, List
 from .kimi_client import kimi_client
 from .inception_client import inception_client
 from .audit_monitor import audit_monitor
-from antigravity_memory_backend.memory_adapter import memory_adapter
+from evolution_memory_backend.memory_adapter import memory_adapter
 
 class CognitiveCortex:
     """
-    Main orchestrator for Antigravity's advanced reasoning.
+    Main orchestrator for Evolution's advanced reasoning.
     Uses Kimi for deep thought and CMS for memory.
     """
     
-    def __init__(self, actor: str = "ANTIGRAVITY_CORTEX"):
+    def __init__(self, actor: str = "EVOLUTION_CORTEX"):
         self.actor = actor
         self.kimi_actor = "KIMI_LEARNING_VAULT"
         # Termos sensíveis que nunca devem ser enviados ao Kimi

@@ -6,7 +6,7 @@ from .openai_client import openai_client
 
 class OpenAIProvider(LLMProvider):
     """
-    OpenAI Provider for Antigravity.
+    OpenAI Provider for Evolution.
     Follows the Zero-Trust and Passive-Only policy.
     """
     
@@ -27,7 +27,7 @@ class OpenAIProvider(LLMProvider):
         # Passive-Only: The provider only analyzes, never executes.
         # This is enforced by the prompt context in higher layers.
         
-        system_msg = "You are a specialized Antigravity Council Member. Provide logical, evidenced-based reasoning."
+        system_msg = "You are a specialized Evolution Council Member. Provide logical, evidenced-based reasoning."
         
         try:
             response_text = await self.client.chat_thinking(

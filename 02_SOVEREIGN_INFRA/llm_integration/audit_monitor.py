@@ -2,7 +2,7 @@ import asyncio
 import hashlib
 import json
 from typing import Dict, Any, List, Optional
-from antigravity_memory_backend.memory_adapter import memory_adapter
+from evolution_memory_backend.memory_adapter import memory_adapter
 
 class KimiAuditMonitor:
     """
