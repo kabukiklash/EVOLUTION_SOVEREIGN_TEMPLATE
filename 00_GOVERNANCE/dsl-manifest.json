@@ -1,0 +1,13 @@
+{
+    "acf_version": "1.0",
+    "hash_algorithm": "SHA-256",
+    "root_hash": "MISSION_PENDING",
+    "timestamp": "2026-03-03T12:00:00Z",
+    "verified_zones": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04"
+    ]
+}
