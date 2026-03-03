@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "🧠 Evolution Context Engine (ACE) - Auto Start",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/02_SOVEREIGN_INFRA/ace/ace_server.py",
+                "${workspaceFolder}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "silent",
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": true,
+                "group": "evolution-ace"
+            },
+            "isBackground": true,
+            "problemMatcher": [],
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}

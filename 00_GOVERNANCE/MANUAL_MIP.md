@@ -44,5 +44,25 @@ Se o `Apply.ps1` falhar ou se o SAR acusar erros de integridade:
 - **Mudanças no Core:** Qualquer alteração na zona `01_KINETIC_CORE` exige a regeneração do manifesto e uma nova rodada de auditoria SAR.
 - **Auditoria Independente:** Periodicamente, submeta o SAR atual ao Concílio de uma instância mestre para validação de drift (desvio).
 
+## 🧠 6. Evolution Context Engine (ACE) — Ponte Cognitiva
+O ACE é o daemon que conecta o Cursor IDE ao CMS, permitindo que a IA tenha memória persistente.
+
+### Instalação das Dependências
+```bash
+pip install -r 02_SOVEREIGN_INFRA/ace/requirements.txt
+```
+
+### Inicialização Automática (Auto-Start)
+O ACE foi configurado para iniciar **automaticamente** quando você abrir esta pasta no **Cursor** ou **VS Code**.
+- O arquivo `.vscode/tasks.json` contém a task com `"runOn": "folderOpen"`.
+- O Cursor pedirá permissão na primeira vez. Aceite para ativar o monitoramento perpétuo.
+- O dashboard local estará disponível em `http://localhost:8095`.
+
+### Inicialização Manual (Fallback)
+Se o auto-start não funcionar por algum motivo:
+```bash
+python 02_SOVEREIGN_INFRA/ace/ace_server.py
+```
+
 ---
 **Protocolo Antimanchas:** Nunca edite arquivos diretamente na zona 01 enquanto o sistema estiver em `MISSION_CERTIFIED`.
